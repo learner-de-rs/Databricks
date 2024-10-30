@@ -1,0 +1,23 @@
+Centralized governance solutions across all your workspace in one repository
+
+Based on SQL
+
+Three level hierarchy: usually in sql it will be database.schema.table_name but you can use catalog.schema.table_name
+
+Provide two types of layers: Storage Credential(apply to entire storage container)
+                              External Location(storage directories within a cloud storage container)
+
+Identity Federation : once access is given to an identity no need for separate access for difference users with same catalog
+
+Delta Sharing : Share and receipt
+
+Privileges : create,select,modify,execute,usage,read files,write files 
+
+You can use GRANT statement for unity catalog to give permissions : GRANT {PRIVILEGE} ON {OBJECT} TO {PRINCIPLE)
+
+Principle can be user,service principle,group
+
+Advantage:
+Centralized governance for data and AI
+Built in dsata search
+Data Lineage
