@@ -1,0 +1,15 @@
+//Granting permissions to the objects
+
+GRANT {PRIVILEGE} ON {OBJECT} <object_name> TO <user_email/team_name>
+GRANT USAGE ON {OBJECT} <object_name> TO <user_email/team_name>
+
+{PRIVILEGE} can be select,modify,delete,all privileges
+{OBJECT} can be catalog,schema,table,view,database,function,any file
+
+also : DENY/REVOKE {PRIVILEGE} ON {OBJECT} <object_name><user_email>
+
+//To view all permissions assigned to user
+SHOW GRANTS ON {object} database.schema.table(assigned to the user)
+
+//To use UI for all above commands
+Databricks ----> Data -----> Data Explorer ---------> Grant/Revoke users using buttons
