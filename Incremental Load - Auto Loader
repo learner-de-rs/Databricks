@@ -1,4 +1,8 @@
 #Auto Loader code for csv files ingestion
+//More Efficient
+//Can process millions of files
+
+
 from pyspark.sql.functions import col, current_timestamp
 csv_folder_path='dbfs:/FileStore/Auto_loader_files/*'
 table_name=f'auto_loader'
