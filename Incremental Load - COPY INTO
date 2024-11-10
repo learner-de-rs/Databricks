@@ -1,0 +1,8 @@
+//Process thousands of file
+//Less efficient
+
+COPY INTO table_name
+FROM 'file_path'
+FILEFORMAT=CSV/JSON/....
+FORMAT_OPTIONS('delimiter'='|','header'='true')
+COPY_OPTIONS('mergeSchema'='true')
